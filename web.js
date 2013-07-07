@@ -6,7 +6,7 @@ app.get('/', function(request, response) {
 
 	var fs = require('fs');
 	//read from file
-	var myBuff = fs.readFileSync(index.html);
+	var myBuff = fs.readFileSync("index.html");
 	
 	//write buffer to screen
 	response.send(myBuff.toString());
